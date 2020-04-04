@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MisterBlogger</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section class="screen"></section>
+
+    <header class="header">
+        <section class="header-box container flex space-between algin-items-center ">
+
+            <div class="logo">Blogin<span>.</span></div>
+            <button class="btn-menu" onclick="onMenuBtn()">☰</button>
+            <ul class="navbar flex clean-list">
+                <li><a href="#">Joutnal</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </section>
+    </header>
+    <main class="main container flex direction-column">
+        <section class="content flex algin-items-center">
+            <img src="images/img1.jpg" />
+            <section class="flex direction-column">
+                <p class="title">Duis aute irure dolor in henderit in voluptate.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="btn-reading" onclick="onRead()">Continue Reading<span>&xrarr;</span></button>
+            </section>
+        </section>
+        <section class="content flex">
+            <img src="images/img2.jpg" />
+            <section class="flex direction-column">
+                <p class="title">Duis aute irure dolor in henderit in voluptate.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="btn-reading" onclick="onRead()">Continue Reading<span>&xrarr;</span></button>
+            </section>
+        </section>
+        <section class="content flex">
+            <img src="images/img3.jpg" />
+            <section class="flex direction-column">
+                <p class="title">Duis aute irure dolor in henderit in voluptate.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="btn-reading" onclick="onRead()">Continue Reading<span>&xrarr;</span></button>
+            </section>
+        </section>
+        <section class="main-bottom flex space-between">
+            <button >&xlarr; Previous</button> <button>Next &xrarr;</button>
+        </section>
+    </main>
+    <footer class="flex justify-content-center">
+        <div class="logo dark-color">Blogin<span>.</span></div>
+        <p>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <b>Pixelhint.com</b></p>
+        <nav class="icons-nav">
+            <a class="flex color-face"><img src="images/icoFacebook.png" alt="faceBook-icon"></a>
+            <a class="flex color-twit"><img src="images/icoTwitter.png" alt="twitter-icon"></a>
+            <a class="flex color-be"><img src="images/icoBe.png" alt="Be-icon"></a>
+            <a class="flex color-o"><img src="images/icoO.png" alt="O-icon"></a>
+        </nav>
+    </footer>
+
+    <div class="modal flex direction-column algin-items-center">
+        <section class="modal-content">
+            <h2 class="modal-title">Join us to get access to the latest stories!</h2>
+            <form onsubmit="onSubmit(event)" class="modal-form flex algin-items-center">
+                <label for="email">Your email:</label>
+                <input type="email" id="email" placeholder="Enter your email" />
+                <button>Go</button>
+            </form>
+        </section>
+        <button class="btn-close" onclick="onCloseModal()">Close</button>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
