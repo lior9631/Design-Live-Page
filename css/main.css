@@ -28,6 +28,9 @@ body {
 a {
   text-decoration: none;
 }
+button {
+  outline: none;
+}
 
 .container {
   max-width: 980px;
@@ -46,7 +49,8 @@ a {
   font-size: 2.5rem;
   color: white;
 }
-.logo span {
+.logo::after {
+  content: ".";
   color: #58c93a;
 }
 
@@ -139,17 +143,15 @@ a {
   padding: 10px 0;
   transition: width 0.4s;
 }
-.btn-reading span {
-  display: none;
-  margin-inline-start: 10px;
-}
+
 .content .btn-reading:hover {
   width: 210px;
   border: 2px solid #58c93a;
   color: #58c93a;
 }
-.btn-reading:hover span {
-  display: inline;
+.btn-reading:hover::after {
+  content: "\27F6";
+  margin-inline-start: 10px;
 }
 
 .main-bottom {
@@ -170,8 +172,16 @@ a {
   border: transparent;
   cursor: pointer;
 }
-.main-bottom button:hover{
+.main-bottom button:hover {
   color: #35c135;
+}
+.btn-prev::before {
+  content: "\27F5";
+  margin-inline-end: 5px;
+}
+.btn-next::after {
+  content: "\27F6";
+  margin-inline-start: 5px;
 }
 footer {
   flex-direction: column;
