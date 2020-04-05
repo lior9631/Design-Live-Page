@@ -38,3 +38,7 @@ function onCloseModal() {
 function doDarkScreen() {
     document.body.classList.toggle('dark-screen')
 }
+
+function onDropdown() {
+    document.body.classList.toggle('show-dorp');
+}

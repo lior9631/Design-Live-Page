@@ -17,11 +17,20 @@
 
             <div class="logo">Blogin</div>
             <button class="btn-menu" onclick="onMenuBtn()">☰</button>
-            <ul class="navbar flex clean-list">
-                <li><a href="#">Joutnal</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="navbar flex algin-items-center clean-list">
+                <!-- <li><a href="#">Journal</a></li> -->
+                <li class="nav-item">
+                    <a href="#" class="dropdown" onclick="onDropdown()">Journal</a>
+                    <ul class="dropdown-list flex direction-column clean-list">
+                        <li class="item-list"><a href="#">October 2016</a></li>
+                        <li class="item-list"><a href="#">January 2017</a></li>
+                        <li class="item-list"><a href="#">April 2017</a></li>
+                        <li class="item-list"><a href="#">July 2017</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Work</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
             </ul>
         </section>
     </header>
